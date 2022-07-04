@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0"> 
+	<tocitem text="Ejemplo JavaHelp Refugio" target="refugio">
+		<tocitem text="Adoptar" target="adoptar"/>
+		<tocitem text="Vacunar" target="vacunar"/>
+		<tocitem text="Registrar" target="registrar"/>
+		<tocitem text="Modificar" target="modificar"/>
+	</tocitem>
+</toc>

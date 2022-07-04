@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXDatePicker?>
+<?import io.github.palexdev.materialfx.controls.MFXLabel?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.legacy.MFXLegacyComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to top, #ffb6c1, #67d0ad);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="601.0" opacity="0.3">
+         <image>
+            <Image url="@../images/main_background.jpg" />
+         </image>
+      </ImageView>
+      <StackPane prefHeight="400.0" prefWidth="602.0">
+         <children>
+            <AnchorPane fx:id="anchorPaneRegisterPet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="238.0" layoutY="341.0" onAction="#registerPetOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Registrar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXTextField fx:id="textFieldNameRegister" layoutX="41.0" layoutY="103.0" lineColor="LIGHTPINK" />
+                  <MFXLabel layoutX="41.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Nombre" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="225.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Sexo" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxSexRegister" layoutX="225.0" layoutY="104.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="414.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Fecha de nacimiento" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXDatePicker fx:id="datePickerBornRegister" layoutX="419.0" layoutY="101.0" lineColor="#4d4d4d" lineStrokeCap="BUTT" maxHeight="-Infinity" maxWidth="-Infinity" pickerColor="LIGHTPINK" prefHeight="30.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="41.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Color predominante" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="223.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="146.0" text="Raza predominante" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxRaceRegister" layoutX="233.0" layoutY="200.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="417.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="146.0" text="Peso" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="225.0" layoutY="246.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Descripción" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxColorRegister" layoutX="45.0" layoutY="200.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXTextField fx:id="textFieldWeigthRegister" layoutX="419.0" layoutY="199.0" lineColor="LIGHTPINK" />
+                  <MFXTextField fx:id="textFieldDescriptionRegister" layoutX="42.0" layoutY="274.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="518.0" />
+                  <MFXLabel fx:id="checkRegisterLabel" layoutX="-1.0" layoutY="303.0" lineColor="#4e00eb00" prefHeight="38.0" prefWidth="602.0" unfocusedLineColor="#9e9e9e00" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneModifyPet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="238.0" layoutY="341.0" onAction="#modifyPetOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Modificar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXTextField fx:id="textFieldNameModify" layoutX="41.0" layoutY="103.0" lineColor="LIGHTPINK" />
+                  <MFXLabel layoutX="41.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Nombre" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="225.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Sexo" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxSexModify" layoutX="225.0" layoutY="104.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="414.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Fecha de nacimiento" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXDatePicker fx:id="datePickerBornDateModify" layoutX="419.0" layoutY="101.0" lineColor="#4d4d4d" lineStrokeCap="BUTT" maxHeight="-Infinity" maxWidth="-Infinity" pickerColor="LIGHTPINK" prefHeight="30.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="41.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Color predominante" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="223.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="146.0" text="Raza predominante" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxRaceModify" layoutX="233.0" layoutY="200.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXLabel layoutX="417.0" layoutY="172.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="146.0" text="Peso" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="225.0" layoutY="246.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Descripción" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxColorModify" layoutX="45.0" layoutY="200.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="135.0" />
+                  <MFXTextField fx:id="textFieldWeightModify" layoutX="419.0" layoutY="199.0" lineColor="LIGHTPINK" />
+                  <MFXTextField fx:id="textFieldDescriptionModify" layoutX="42.0" layoutY="274.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="518.0" />
+                  <MFXLabel fx:id="checkModifyLabel" layoutY="300.0" lineColor="#4e00eb00" prefHeight="38.0" prefWidth="602.0" unfocusedLineColor="#9e9e9e00" />
+                  <MFXLabel fx:id="labelPetID" alignment="CENTER_LEFT" layoutX="293.0" layoutY="36.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="100.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel alignment="CENTER_RIGHT" labelAlignment="CENTER_RIGHT" layoutX="201.0" layoutY="36.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="38.0" text="ID:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneLastAdoptions" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <TableView fx:id="tableLastAdoptionsPane" layoutX="58.0" layoutY="73.0" prefHeight="280.0" prefWidth="478.0" stylesheets="@../css/dash.css">
+                     <columns>
+                        <TableColumn fx:id="columnIdLastAdoptionsPane" prefWidth="75.0" text="Id" />
+                        <TableColumn fx:id="columnNameLastAdoptionsPane" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="columnSexLastAdoptionsPane" prefWidth="75.0" text="Sexo" />
+                        <TableColumn fx:id="columnBornDateLastAdoptionsPane" prefWidth="104.0" text="F. Nac." />
+                        <TableColumn fx:id="columnColorLastAdoptionsPane" minWidth="0.0" prefWidth="4.0" text="Color" />
+                        <TableColumn fx:id="columnRaceLastAdoptionsPane" prefWidth="75.0" text="Raza" />
+                        <TableColumn fx:id="columnWeightLastAdoptionsPane" prefWidth="75.0" text="Peso" />
+                        <TableColumn fx:id="columnArriveDateLastAdoptionsPane" prefWidth="75.0" text="Arribo" />
+                        <TableColumn fx:id="columnAdoptDateLastAdoptionsPane" prefWidth="75.0" text="F. Adop." />
+                        <TableColumn fx:id="columnFeaturesLastAdoptionsPane" prefWidth="75.0" text="Carac." />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneAdoptPet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="238.0" layoutY="341.0" onAction="#adoptPetOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Adoptar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="158.0" layoutY="76.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Tipo:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxPetTypeAdopt" layoutX="307.0" layoutY="78.0" lineColor="LIGHTPINK" onAction="#setNameSpecieToAdoptOnAction" prefHeight="24.0" prefWidth="135.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></MFXLegacyComboBox>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="151.0" layoutY="163.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Nombre:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="namePetAdoptLabel" alignment="CENTER_LEFT" layoutX="301.0" layoutY="163.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="126.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="checkAdoptLabel" layoutX="4.0" layoutY="251.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="593.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="153.0" layoutY="186.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Tipo:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="speciePetAdoptLabel" alignment="CENTER_LEFT" layoutX="298.0" layoutY="186.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="155.0" layoutY="135.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="ID:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="idPetAdoptLabel" alignment="CENTER_LEFT" layoutX="305.0" layoutY="135.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="126.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel graphicTextGap="0.0" layoutX="241.0" layoutY="288.0" lineColor="#4e00eb00" prefHeight="38.0" prefWidth="119.0" text="Deslice para adoptar" unfocusedLineColor="#9e9e9e00" />
+                  <FontAwesomeIconView fx:id="arrowIcon" glyphName="ARROW_RIGHT" layoutX="220.0" layoutY="314.0" onDragDetected="#handleDragDetected" size="20" text="" wrappingWidth="21.428571701049805">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="lockIcon" glyphName="LOCK" layoutX="371.0" layoutY="314.0" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" size="20" wrappingWidth="21.428571701049805" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneFilterPet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXTextField fx:id="textFieldFilterPane" layoutX="165.0" layoutY="54.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="272.0" />
+                  <FontAwesomeIconView fill="#363636" glyphName="SEARCH" layoutX="135.0" layoutY="76.0" size="25" />
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="83.0" layoutY="341.0" onAction="#modifyButtonPaneOnAction" prefHeight="26.0" prefWidth="135.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Modificar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <TableView fx:id="tableFilterPane" layoutX="41.0" layoutY="111.0" prefHeight="210.0" prefWidth="518.0" stylesheets="@../css/dash.css">
+                     <columns>
+                        <TableColumn fx:id="columnIdFilterPane" prefWidth="75.0" text="Id" />
+                        <TableColumn fx:id="columnNameFilterPane" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="columnSexFilterPane" prefWidth="75.0" text="Sexo" />
+                        <TableColumn fx:id="columnBornFilterPane" prefWidth="104.0" text="F. Nac." />
+                        <TableColumn fx:id="columnColorFilterPane" minWidth="0.0" prefWidth="4.0" text="Color" />
+                        <TableColumn fx:id="columnRaceFilterPane" prefWidth="75.0" text="Raza" />
+                        <TableColumn fx:id="columnWeigthFilterPane" prefWidth="75.0" text="Peso" />
+                        <TableColumn fx:id="columnArriveFilterPane" prefWidth="75.0" text="Arribo" />
+                        <TableColumn fx:id="columnAdoptFilterPane" prefWidth="75.0" text="F. Adop." />
+                        <TableColumn fx:id="columnFeaturesFilterPane" prefWidth="75.0" text="Carac." />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="385.0" layoutY="341.0" onAction="#vaccinateButtonPaneOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Vacunar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneSearchPet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="90.0" layoutY="341.0" onAction="#searchPetOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Buscar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="384.0" layoutY="341.0" onAction="#modifyButtonPaneOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Modificar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="238.0" layoutY="341.0" onAction="#vaccinateButtonPaneOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Vacunar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXLabel graphicTextGap="0.0" layoutX="14.0" layoutY="51.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="41.0" text="Especie" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxSpecieSearch" layoutX="90.0" layoutY="53.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="87.0" />
+                  <MFXLabel graphicTextGap="0.0" layoutX="178.0" layoutY="51.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="41.0" text="Raza" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxRaceSearch" layoutX="252.0" layoutY="53.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="146.0" />
+                  <MFXLabel graphicTextGap="0.0" layoutX="398.0" layoutY="51.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="41.0" text="Color" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxColorSearch" layoutX="472.0" layoutY="53.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="87.0" />
+                  <TableView fx:id="tableSearchPane" layoutX="46.0" layoutY="101.0" prefHeight="210.0" prefWidth="518.0" stylesheets="@../css/dash.css">
+                    <columns>
+                      <TableColumn fx:id="columnIdSearchPane" prefWidth="75.0" text="Id" />
+                      <TableColumn fx:id="columnNameSearchPane" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="columnSexSearchPane" prefWidth="75.0" text="Sexo" />
+                        <TableColumn fx:id="columnBornSearchPane" prefWidth="104.0" text="F. Nac." />
+                        <TableColumn fx:id="columnColorSearchPane" minWidth="0.0" prefWidth="4.0" text="Color" />
+                        <TableColumn fx:id="columnRaceSearchPane" prefWidth="75.0" text="Raza" />
+                        <TableColumn fx:id="columnWeightSearchPane" prefWidth="75.0" text="Peso" />
+                        <TableColumn fx:id="columnArriveSearchPane" prefWidth="75.0" text="Arribo" />
+                        <TableColumn fx:id="columnAdoptSearchPane" prefWidth="75.0" text="F. Adop." />
+                        <TableColumn fx:id="columnFeaturesSearchPane" prefWidth="75.0" text="Carac." />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneVaccinatePet" opacity="0.0" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="238.0" layoutY="341.0" onAction="#vaccinateOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Vacunar Mascota">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MFXButton>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="143.0" layoutY="72.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="87.0" text="Nombre:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="143.0" layoutY="112.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="41.0" text="Id:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="idPetToVaccinate" layoutX="278.0" layoutY="112.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="checkVaccinate" layoutX="4.0" layoutY="282.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="594.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel layoutX="143.0" layoutY="185.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="Seleccione" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxVaccinate" layoutX="292.0" layoutY="199.0" lineColor="LIGHTPINK" prefHeight="24.0" prefWidth="144.0" />
+                  <MFXLabel layoutX="143.0" layoutY="211.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" text="una vacuna" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="namePetToVaccinate" layoutX="278.0" layoutY="72.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchorPaneSeeVaccinate" prefHeight="290.0" prefWidth="506.0">
+               <children>
+                  <TableView fx:id="tableVaccinate" layoutX="97.0" layoutY="153.0" prefHeight="210.0" prefWidth="423.0" stylesheets="@../css/dash.css">
+                     <columns>
+                        <TableColumn fx:id="columnVaccinates" prefWidth="75.0" text="Vacunas" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="143.0" layoutY="72.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="87.0" text="Nombre:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel alignment="CENTER_RIGHT" layoutX="143.0" layoutY="112.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="41.0" text="Id:" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLabel fx:id="idPetSeeVaccinate" layoutX="278.0" layoutY="112.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="135.0" unfocusedLineColor="#9e9e9e00">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </MFXLabel>
+                  <MFXLegacyComboBox fx:id="comboBoxShowVaccinate" layoutX="281.0" layoutY="74.0" lineColor="LIGHTPINK" onAction="#comboBoxShowVaccinateOnAction" prefHeight="24.0" prefWidth="126.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <MFXLabel animateLines="false" graphicTextGap="0.0" layoutX="35.0" layoutY="13.0" lineColor="#4200eb00" prefHeight="28.0" prefWidth="57.0" text="REGALA VIDA" unfocusedLineColor="#ffb8c300">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font>
+         <textFill>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </textFill>
+      </MFXLabel>
+      <FontAwesomeIconView fx:id="deployMenuIcon" fill="#363636" glyphName="NAVICON" layoutX="14.0" layoutY="36.0" onMouseClicked="#deployMenuOnClick" size="25">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="exitIcon" fill="#363636" glyphName="CLOSE" layoutX="576.0" layoutY="32.0" onMouseClicked="#handleClose" size="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="backIcon" fill="#363636" glyphName="ARROW_LEFT" layoutX="535.0" layoutY="33.0" onMouseClicked="#handleBack" size="15" text="">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView fx:id="helpIcon" fill="#363636" glyphName="QUESTION" layoutX="557.0" layoutY="32.0" size="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <Button fx:id="helpButton" layoutX="553.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="26.0" prefWidth="13.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <VBox fx:id="vBoxContainer" alignment="TOP_CENTER" opacity="0.0" prefHeight="400.0" prefWidth="183.0" style="-fx-background-color: #363636;">
+         <children>
+            <Pane prefHeight="86.0" prefWidth="168.0">
+               <children>
+                  <MFXLabel animateLines="false" graphicTextGap="0.0" lineColor="#4200eb00" prefHeight="86.0" prefWidth="183.0" text="REGALA VIDA" unfocusedLineColor="#ffb8c300">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="23.0" />
+                     </font>
+                     <textFill>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </textFill>
+                  </MFXLabel>
+               </children>
+            </Pane>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#registerPetMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Registrar mascota">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#searchPetMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Buscar mascotas">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#filterPetMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Filtrar mascotas">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#lastAdoptionsMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Últimas adopciones">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#adoptPetMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Adoptar mascota">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <MFXButton buttonType="RAISED" depthLevel="LEVEL4" onAction="#vaccineMenuOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Vacunas">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" />
+               </VBox.margin>
+            </MFXButton>
+            <ImageView fitHeight="87.0" fitWidth="87.0">
+               <image>
+                  <Image url="@../images/animal_heart.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

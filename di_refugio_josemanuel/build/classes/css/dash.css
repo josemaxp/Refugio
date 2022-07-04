@@ -1,0 +1,24 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size: 20;
+    -fx-background-color: #4d4d4d;
+}
+.table-view .column-header-background .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-aligment: CENTER_LEFT;
+}
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-aligment: center-left;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected{
+    -fx-background-color: rgb(127,172,243);
+}
+
+.table-row-cell:selected .text{
+    -fx-fill: white;   
+}

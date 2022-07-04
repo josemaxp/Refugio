@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='ISO-8859-1'  ?>
+<index version="1.0">
+		<indexitem text="Refugio" target="refugio"/>
+        <indexitem text="Adoptar" target="adoptar"/>
+        <indexitem text="Vacunar" target="vacunar"/>
+		<indexitem text="Registrar" target="registrar"/>
+		<indexitem text="Modificar" target="modificar"/>
+</index>

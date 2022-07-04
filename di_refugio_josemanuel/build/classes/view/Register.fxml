@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXLabel?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="314.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegisterController">
+   <children>
+      <ImageView fitHeight="505.0" fitWidth="327.0" layoutX="-5.0" opacity="0.85">
+         <image>
+            <Image url="@../images/login_background.jpg" />
+         </image>
+      </ImageView>
+      <MFXLabel animateLines="false" graphicTextGap="0.0" layoutX="42.0" layoutY="33.0" lineColor="#4a00eb00" style="-fx-background-color: #ffb6c1; -fx-background-radius: 25;" text="REGALA VIDA" unfocusedLineColor="#9e9e9e00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="32.0" />
+         </font>
+         <textFill>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </textFill>
+      </MFXLabel>
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL4" layoutX="98.0" layoutY="436.0" onAction="#registerButtonOnAction" prefHeight="26.0" prefWidth="126.0" rippleColor="#67d0ad" rippleRadiusMultiplier="1.0" style="-fx-background-color: #7fffd4; -fx-background-radius: 25;" text="Register">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MFXButton>
+      <MFXTextField fx:id="userTextField" layoutX="54.0" layoutY="144.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="240.0" promptText="Usuario">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </MFXTextField>
+      <FontAwesomeIconView fill="#363636" glyphName="USER" layoutX="24.0" layoutY="165.0" size="20" text="" wrappingWidth="15.0" />
+      <FontAwesomeIconView fill="#363636" glyphName="LOCK" layoutX="26.0" layoutY="204.0" size="20" text="" wrappingWidth="15.0" />
+      <MFXPasswordField fx:id="passwordTextField" layoutX="56.0" layoutY="183.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="206.0" promptText="Contraseña">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </MFXPasswordField>
+      <FontAwesomeIconView fx:id="exitIcon" fill="#363636" glyphName="CLOSE" layoutX="302.0" layoutY="19.0" onMouseClicked="#handleClose" size="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView fill="#363636" glyphName="LOCK" layoutX="26.0" layoutY="247.0" size="20" text="" wrappingWidth="15.0" />
+      <MFXPasswordField fx:id="repeatPasswordTextField" layoutX="56.0" layoutY="226.0" lineColor="LIGHTPINK" prefHeight="26.0" prefWidth="206.0" promptText="Repite la contraseña">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </MFXPasswordField>
+      <ImageView fitHeight="140.0" fitWidth="140.0" layoutX="91.0" layoutY="279.0">
+         <image>
+            <Image url="@../images/animal_heart.png" />
+         </image>
+      </ImageView>
+      <MFXLabel fx:id="checkUserLabel" layoutX="13.0" layoutY="471.0" lineColor="#4e00eb00" prefHeight="27.0" prefWidth="297.0" unfocusedLineColor="#9e9e9e00">
+         <textFill>
+            <Color red="1.0" green="1.0" blue="1.0" />
+         </textFill>
+      </MFXLabel>
+      <FontAwesomeIconView fx:id="backIcon" fill="#363636" glyphName="ARROW_LEFT" layoutX="8.0" layoutY="19.0" onMouseClicked="#handleBack" size="15">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

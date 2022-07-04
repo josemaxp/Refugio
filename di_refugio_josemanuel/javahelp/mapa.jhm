@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<map version="1.0">
+   <mapID target="refugio" url="html/main.html" />
+   <mapID target="adoptar" url="html/adoptar.html" />
+   <mapID target="vacunar" url="html/vacunar.html" />
+   <mapID target="modificar" url="html/modificar.html" />
+   <mapID target="registrar" url="html/registrar.html" />
+</map>
